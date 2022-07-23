@@ -22,7 +22,7 @@ config = r"nnconfig.json"
 
 with open("nnconfig.json") as f:
     config = json.load(f)
-NOTNUKER = config.get("NOTNUKER")
+NOTNUKER = my_secret = os.environ['TOKEN']
 prefix = config.get("Prefix")
 
 keep_alive()
